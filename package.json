@@ -1,0 +1,28 @@
+{
+  "name": "simple_object",
+  "version": "0.0.0",
+  "description": "simple_object",
+  "main": "card.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-simple-mocha": "~0.4.0",
+    "jshint": "~2.4.3",
+    "grunt-contrib-jshint": "~0.8.0",
+    "chai": "~1.9.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "author": "Jonah Kirangi",
+  "license": "MIT"
+}
