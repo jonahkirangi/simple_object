@@ -10,7 +10,7 @@ describe('when I create a card with a particular suit and rank', function() {
 
   describe('constructor', function() {
     it('card should exist', function() {
-      expect(myCard).to.be.ok; //jshint ignore:line
+      expect(myCard).to.be.an('object');
     });
 
     it('card should have particular suit', function() {
