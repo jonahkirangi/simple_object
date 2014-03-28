@@ -7,6 +7,7 @@ describe('when a deck of cards is created', function() {
 
   beforeEach(function() {
     myDeck = new Deck();
+    myDeck.init();
   });
 
   describe('constructor', function() {
@@ -14,12 +15,12 @@ describe('when a deck of cards is created', function() {
       expect(myDeck).to.be.an('object');
     });
 
-    it('deck should have cards', function() {
-      expect(myDeck).to.have.property('cards');
+    it('deck should not have cards as a property', function() {
+      expect(myDeck).to.not.have.property('cards');
     });
 
     it('deck should store 52 cards', function() {
-      expect(myDeck).to.have.length.equal(52);
+      expect(myDeck.size()).to.equal(52);
     });
   });
 });
