@@ -6,7 +6,7 @@ describe('when a deck of cards is created', function() {
   var myDeck;
 
   beforeEach(function() {
-    myDeck = new Deck(Card);
+    myDeck = new Deck();
   });
 
   describe('constructor', function() {

@@ -1,7 +1,9 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
-  // Project configuration.
+  grunt.loadNpmTasks('grunt-simple-mocha');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
@@ -29,11 +31,5 @@ module.exports = function(grunt) {
     }
   });
 
-  // For this to work, you need to have run `npm install grunt-simple-mocha`
-  grunt.loadNpmTasks('grunt-simple-mocha');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-
-  // Add a default task. This is optional, of course :)
   grunt.registerTask('default', ['simplemocha', 'jshint']);
-
 };
